@@ -93,7 +93,7 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "homepage": ".",
+  "homepage": "./",
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!(roughjs|points-on-curve|path-data-parser|points-on-path|browser-fs-access)/)"
@@ -129,6 +129,7 @@
     "test": "yarn test:app",
     "autorelease": "node scripts/autorelease.js",
     "prerelease": "node scripts/prerelease.js",
-    "release": "node scripts/release.js"
+    "release": "node scripts/release.js",
+    "deploy": "gh-pages -d build"
   }
 }
